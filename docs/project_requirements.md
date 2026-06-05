@@ -1,24 +1,57 @@
-# Eqonomics Requirements
+# Eqonomics Architecture
 
-## Phase 1
-- Home Page
-- Login
-- Signup
-- Student Dashboard
-- CUET PG Test Series
-- UGC NET Test Series
-- Reading Materials
-- Contact Page
-- Razorpay Integration
+## Frontend
 
-## Phase 2
-- Mock Test Engine
-- Analytics Dashboard
-- Leaderboard
-- Certificates
+* Next.js
+* TypeScript
+* Tailwind CSS
+* ShadCN UI
 
-## Phase 3
-- AI Economics News Hub
-- Daily Current Affairs
-- AI MCQ Generator
-- Economic Data Dashboard
+## Backend
+
+* FastAPI
+* SQLAlchemy
+* Alembic
+
+## Database
+
+* PostgreSQL
+
+## Authentication
+
+* JWT
+* Google Login
+
+## Payments
+
+* Razorpay
+
+## Student Features
+
+* Signup/Login
+* Dashboard
+* Test Series
+* Reading Materials
+* Payments
+* Test Engine
+* Analytics
+
+## Admin Features
+
+* User Management
+* Test Management
+* Material Upload
+* Revenue Dashboard
+
+## AI Features (Phase 2)
+
+* Economics News Hub
+* Current Affairs Generator
+* AI MCQ Generator
+* Weekly Economics Digest
+
+## Deployment
+
+* Frontend: Vercel
+* Backend: Railway
+* Database: PostgreSQL
