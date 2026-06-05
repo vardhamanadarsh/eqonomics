@@ -1,19 +1,25 @@
 from fastapi import FastAPI
 
+from app.database.database import engine, Base
+from app.models.user import User
+from app.api.auth import router as auth_router
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI(
     title="Eqonomics API",
-    description="Backend API for Eqonomics",
     version="1.0.0"
 )
+app.include_router(auth_router, prefix="/auth", tags=["Authentication"])
 
 @app.get("/")
-def root():
+def home():
     return {
         "message": "Welcome to Eqonomics API"
     }
 
+
 @app.get("/health")
-def health_check():
+def health():
     return {
         "status": "healthy"
     }
